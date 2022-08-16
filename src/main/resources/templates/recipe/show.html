@@ -89,7 +89,9 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <ul th:each="ingredient : ${recipe.ingredients}">
-                                <li th:text="${ingredient.amount} +' '+ ${ingredient.uom.description} +' '+ ${ingredient.description}">cat one</li>
+                                <li th:text="${ingredient.amount}
+                                +' '+ ${ingredient.uom.description}
+                                +' '+ ${ingredient.description}">cat one</li>
                                 </ul>
                             </div>
                         </div>
